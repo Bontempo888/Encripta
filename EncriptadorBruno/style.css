@@ -1,0 +1,161 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    font-family: "Inter", sans-serif;
+  }
+
+  *,
+  *::before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+
+body {
+    background: rgb(232, 236, 248);
+    background: linear-gradient(
+      0deg,
+      rgba(232, 236, 248, 1) 0%,
+      rgba(232, 236, 248, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1vh;
+  }
+
+  .flex {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .cuadricula {
+    display: grid;
+  }
+  
+  .advertencia{
+    border-radius: 30%;
+    color: #e8ecf8;
+    padding: 0.35rem 1rem;
+    background-color: #757882;
+    font-size: 1.5rem;
+    color: #757882;
+  }
+
+
+  main {
+    margin: 0 auto;
+    padding: 1rem 0;
+    gap: 1rem;      
+    height: 85vh;
+    width: 90%;
+  }
+
+  .user {
+    height: 90%;          
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  textarea {
+    width: 90%;
+    display: block;
+    margin: 1.5rem auto;
+    padding: 3rem 0;
+    height: 65%;
+    font-size: 1.75rem;
+    background-color: unset;
+    border: none;
+    resize: none;
+  }
+
+  textarea:focus {
+    outline: none;
+  }
+
+  *:disabled {
+    background-color: transparent;
+    color: #000;
+    cursor: text;
+  }
+
+  label {
+    font-size: 1.5rem;
+    color: #757882;
+  }
+
+  .flex-button {
+    gap: 2rem;
+    padding-top: 2rem;
+    justify-content: space-around;
+  }
+
+  button {
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: 0.8em;
+    padding: 0.75em 0;
+    width: 100%;
+    border: 1px solid;
+  }
+
+  .boton-encriptar {
+    color: #fff;
+    background-color: #042c5d;
+  }
+
+  .boton-copiar {
+    color: #2c3744;
+    background-color: #e6edfa;
+    border: 1px solid #5b616c;
+  }
+
+  @media (min-width: 1080px) {
+    main {
+      width: 75%;
+      grid-template-columns: 2fr 1fr;
+    }
+    .user {
+      flex: 2;
+    }
+    textarea {
+      font-size: 2.5rem;
+      margin: 3rem auto;
+      height: 80%;
+    }
+    button {
+      font-size: 2.5rem;
+    }
+  }
+
+  .resultado {
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-between;
+    border-radius: 1em;
+    background-color: #fff;
+  }
+
+  footer {
+    font-size: 1.5rem;
+    height: 7vh;
+    text-align: center;
+  }
+/*nuevo*/
+  .icons {
+    font-size: 2.0rem;
+    gap: 1.5rem;
+    padding-top: 0.5rem;
+    justify-content: center;
+  }
+    
+  .icons i {
+    text-shadow: 2px 2px 4px #fff;
+    color: #000;
+    transition: all 1s;
+  }
+
+  .icons i:hover {
+    color: blueviolet;
+  }
